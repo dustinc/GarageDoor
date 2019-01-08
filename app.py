@@ -16,6 +16,8 @@ io.setup(DOOR, io.OUT)
 io.setup(SENSOR_A, io.IN, pull_up_down=io.PUD_UP)
 io.setup(SENSOR_B, io.IN, pull_up_down=io.PUD_UP)
 
+io.output(DOOR, True)
+
 DOOR_STATE = [
   'CLOSED',
   'TRANSIT',
